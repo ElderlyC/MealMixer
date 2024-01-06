@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/MealMixer/static/css/main.fb5023a2.css",
+    "main.js": "/MealMixer/static/js/main.04d5890f.js",
+    "static/js/787.848790d7.chunk.js": "/MealMixer/static/js/787.848790d7.chunk.js",
+    "index.html": "/MealMixer/index.html",
+    "main.fb5023a2.css.map": "/MealMixer/static/css/main.fb5023a2.css.map",
+    "main.04d5890f.js.map": "/MealMixer/static/js/main.04d5890f.js.map",
+    "787.848790d7.chunk.js.map": "/MealMixer/static/js/787.848790d7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fb5023a2.css",
+    "static/js/main.04d5890f.js"
+  ]
+}
