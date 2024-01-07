@@ -41,10 +41,18 @@ const OptionsRandomiser: React.FC<OptionsRandomiserProps> = ({ options }) => {
           flexDirection: "row",
           display: "flex",
           justifyContent: "space-around",
+          maxWidth: "100vw",
+          "@media (max-width:600px)": {
+            flexDirection: "column",
+            alignItems: "center",
+          },
         }}
       >
         <Select
-          sx={{ width: "25%" }}
+          sx={{
+            width: "28%",
+            "@media (max-width:600px)": { width: "80%" },
+          }}
           onChange={(e: SelectChangeEvent<string>) =>
             handleOptionChange(e, setSelectedOption1)
           }
@@ -57,7 +65,10 @@ const OptionsRandomiser: React.FC<OptionsRandomiserProps> = ({ options }) => {
           ))}
         </Select>
         <Select
-          sx={{ width: "25%" }}
+          sx={{
+            width: "28%",
+            "@media (max-width:600px)": { width: "80%" },
+          }}
           onChange={(e: SelectChangeEvent<string>) =>
             handleOptionChange(e, setSelectedOption2)
           }
@@ -70,7 +81,10 @@ const OptionsRandomiser: React.FC<OptionsRandomiserProps> = ({ options }) => {
           ))}
         </Select>
         <Select
-          sx={{ width: "25%" }}
+          sx={{
+            width: "28%",
+            "@media (max-width:600px)": { width: "80%" },
+          }}
           onChange={(e: SelectChangeEvent<string>) =>
             handleOptionChange(e, setSelectedOption3)
           }
@@ -83,16 +97,20 @@ const OptionsRandomiser: React.FC<OptionsRandomiserProps> = ({ options }) => {
           ))}
         </Select>
       </Box>
-      <div
-        style={{
-          margin: "30px",
+      <Box
+        sx={{
+          "@media (max-width:600px)": {
+            fontSize: "1.5rem",
+          },
+          margin: "30px 10px 30px",
           fontSize: "2rem",
           fontWeight: "500",
           color: "darkblue",
+          height: "3rem",
         }}
       >
         {`${selectedOption2} ${selectedOption1} with ${selectedOption3}`}
-      </div>
+      </Box>
       <Button variant={"contained"} onClick={handleRandom}>
         Random!
       </Button>
